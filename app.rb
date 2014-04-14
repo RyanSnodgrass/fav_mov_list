@@ -4,6 +4,10 @@ get "/error" do
 	"whoopsies try again"
 end
 
+get "/addition" do
+	erb :"fav_mov/addition_index"
+end
+
 get "/fav_mov_app" do	
 	@favs = Favorites.favs
 	erb :"fav_mov/index"
