@@ -11,13 +11,13 @@ end
 
 class Favorites
 	attr_reader :favs
-	@@favs = ["Blade Runner", "Fight Club"]
+	@@favs = {"Blade Runner" => "Super awesome Cyberpunk movie directed by Ridley Scott and starring Harrison Ford", "Fight Club" => "Super awesome movie about 'the doomed generation' fighting against each other and the established system. Starring Brad Pitt and Edward Norton"}
 	def initialize
 	end
 	def self.favs
 		@@favs
 	end
 	def self.add_mov(new_mov)
-		@@favs.push(new_mov)
+		@@favs.merge!(new_mov)
 	end
 end
