@@ -11,7 +11,7 @@ end
 
 class Favorites
 	attr_reader :favs
-	@@favs = {"Blade Runner" => "Super awesome Cyberpunk movie directed by Ridley Scott and starring Harrison Ford", "Fight Club" => "Super awesome movie about 'the doomed generation' fighting against each other and the established system. Starring Brad Pitt and Edward Norton"}
+	@@favs = {"Blade Runner" => "Super awesome Cyberpunk movie directed by Ridley Scott and starring Harrison Ford", "Fight Club" => "Super awesome movie about 'the doomed generation' fighting against the established system and each other. Starring Brad Pitt and Edward Norton", "2001 Space Odyssey" => "Super trippy awesome movie directed by Stanley Kubrik showcasing a metaphorical evolution of mankind", "Spring, Summer, Fall, Winter, and Spring Again" => "Quiet meditative moving painting focusing on two monks in the ganghis mountains and the revolving nature of life."}
 	def initialize
 	end
 	def self.favs

@@ -57,8 +57,11 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, These are your favorite movies!</h1>
-        <p>From here you can view your favorite movies, update your list, even remove movies you dont' like anymore. If this is your first time, we've added some suggestions to your list.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <p>From here you can view your favorite movies, update your list, even remove movies you don't like anymore. If this is your first time, we've added some suggestions to your list.</p>
+        <ul id="navigation-buttons">
+        	<li><p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p></li>
+        <li><p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p></li>
+      </ul>
       </div>
     </div>
 
@@ -88,15 +91,14 @@
 	          <h2><%= movie %></h2>
 	          <p><%= description %></p>
 	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+
         	</div>
+        	
         <% end %>
 
-      	<ul>
-					<% @favs.each do |movie, description| %>
-						<h1><%= movie %> </h1>
-						<p><%=description %></p>
-					<% end %>
-				</ul>
+
+
       <footer>
         <p>&copy; Company 2014</p>
       </footer>
