@@ -68,16 +68,17 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+      	
       	<% @favs.each do |movie, description| %>
-        	<div class="col-md-4">
+        	<div id="movie-desc" class="col-md-4">
 	          <h2><%= movie %></h2>
 	          <p><%= description %></p>
 	          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         	</div>
         <% end %>
+      </div>
+      
      <hr>
-
-
       <footer>
         <p>&copy; Company 2014</p>
       </footer>

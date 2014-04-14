@@ -14,3 +14,7 @@
  	list-style-type: none;
 
  }
+
+ #movie-desc {
+ 	min-height: 200px;
+ }
