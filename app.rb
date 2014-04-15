@@ -15,6 +15,7 @@ get "/fav_mov_app" do
 end
 
 get "/remove" do
+	@favs = Favorites.favs
 	erb :"fav_mov/remove_index"
 end
 
