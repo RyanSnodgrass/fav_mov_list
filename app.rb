@@ -14,11 +14,15 @@ get "/fav_mov_app" do
 	erb :"fav_mov/index"
 end
 
+get "/remove" do
+	erb :"fav_mov/remove_index"
+end
+
 post "/favs" do
 	name = params[:mov_name]
 	description = params[:mov_desc]
 	movie = {name => description}
-	
+
 	Favorites.add_mov(movie)
 	redirect "./fav_mov_app"
 end
